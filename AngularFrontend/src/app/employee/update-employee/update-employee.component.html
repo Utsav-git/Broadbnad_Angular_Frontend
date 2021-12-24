@@ -1,0 +1,219 @@
+<!-- <div class="container">
+  <h2 class="text-center">Employee Update</h2>
+
+  <form #empForm="ngForm" (ngSubmit)="updateEmployee(empForm.value)">
+    <div class="form-row">
+      <div class="form-group text-center">
+        <label>Employee ID </label>
+        <input
+          type="text"
+          name="empid"
+          #empid="ngModel"
+          ngModel
+          [(ngModel)]="emplist.empid"
+          required
+        />
+        <div class="alert-danger" *ngIf="empid.invalid && empid.touched">
+          <div *ngIf="empid.errors?.['required']">Employee ID Required</div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="form-group text-center">
+        <label> Name </label>
+        <input
+          type="text"
+          name="empname"
+          #empname="ngModel"
+          ngModel
+          [(ngModel)]="emplist.empname"
+        />
+      </div>
+
+      <br />
+
+      <div class="form-group text-center">
+        <label> Email </label>
+        <input
+          type="text"
+          name="email"
+          #email="ngModel"
+          ngModel
+          [(ngModel)]="emplist.email"
+          size="30"
+          required
+          pattern="[a-zA-Z0-9]+@[a-z]+[.][a-z]+"
+          placeholder="Eg. john1@gmail.com"
+        />
+        <div class="alert-danger" *ngIf="email.invalid && email.touched">
+          <div *ngIf="email.errors?.['required']">Enter Email</div>
+          <div *ngIf="email.errors?.['pattern']">
+            Enter email in valid pattern
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="form-group text-center">
+        <label> Phone no </label>
+        <input
+          type="text"
+          name="phone"
+          #phone="ngModel"
+          ngModel
+          [(ngModel)]="emplist.phone"
+        />
+      </div>
+
+      <br />
+
+      <div class="form-group text-center">
+        <label>Address</label>
+        <input
+          type="text"
+          name="address"
+          #address="ngModel"
+          ngModel
+          [(ngModel)]="emplist.address"
+        />
+      </div>
+
+      <br />
+
+      <div class="text-center text-center">
+        <button
+          type="submit"
+          class="btn btn-primary mx-2"
+          [disabled]="empForm.invalid"
+        >
+          Edit
+        </button>
+        <button class="btn btn-secondary" type="reset">Cancel</button>
+        <button
+          type="button"
+          class="btn btn-info mx-2"
+          routerLink="/employee-list"
+          routerLinkActive="active"
+        >
+          <i class="fas fa-arrow-left arrow"></i>Back
+        </button>
+      </div>
+      
+    </div>
+  </form>
+</div> -->
+<div class="main_container">
+  <h2 class="text-center">Employee Update</h2>
+
+  <div class="container">
+    <form #empForm="ngForm" (ngSubmit)="updateEmployee(empForm.value)">
+      <div class="row">
+        <div class="col-25">
+          <label>Employee ID </label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            name="empid"
+            #empid="ngModel"
+            [(ngModel)]="emplist.empid"
+            required
+          />
+        </div>
+        <div class="alert-danger" *ngIf="empid.invalid && empid.touched">
+          <div *ngIf="empid.errors?.['required']">Employee ID Required</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Empname">Empname</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            name="empname"
+            #empname="ngModel"
+            [(ngModel)]="emplist.empname"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">email</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            name="email"
+            #email="ngModel"
+            [(ngModel)]="emplist.email"
+            size="30"
+            required
+            pattern="[a-zA-Z0-9]+@[a-z]+[.][a-z]+"
+            placeholder="Eg. john1@gmail.com"
+          />
+
+          <div class="alert-danger" *ngIf="email.invalid && email.touched">
+            <div *ngIf="email.errors?.['required']">Enter Email</div>
+            <div *ngIf="email.errors?.['pattern']">
+              Enter email in valid pattern
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">phone</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            name="phone"
+            #phone="ngModel"
+            [(ngModel)]="emplist.phone"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">address</label>
+        </div>
+        <div class="col-75">
+          <input
+            type="text"
+            name="address"
+            #address="ngModel"
+            [(ngModel)]="emplist.address"
+          />
+        </div>
+      </div>
+
+      <br />
+      <div class="row btn_container">
+        <button
+          type="submit"
+          class="btn btn-primary mx-2"
+          [disabled]="empForm.invalid"
+        >
+          Edit
+        </button>
+        <button class="btn btn-secondary" type="reset">Cancel</button>
+
+        <button
+          type="button"
+          class="btn btn-info mx-2"
+          routerLink="/employee-list"
+          routerLinkActive="active"
+        >
+          <i class="fas fa-arrow-left arrow"></i>Back
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

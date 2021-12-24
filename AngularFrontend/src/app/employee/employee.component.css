@@ -1,0 +1,15 @@
+
+
+.container > h2 {
+  margin: 2% 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-style: 42px;
+}
+.table_container{
+    margin: 3% 0;
+}
+
+.arrow {
+  margin-right: 10px;
+}

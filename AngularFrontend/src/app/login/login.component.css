@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Numans");
+
+/* html,body {
+  
+} */
+
+.container {
+  /* background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg"); */
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  font-family: "Numans", sans-serif;
+  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1606420187127-dae7c868fa7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.card-header > h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 32px;
+}
+.input-group {
+  margin-bottom: 40px;
+}
+
+.input-group-prepend span {
+  width: 60px;
+  height: 50px;
+  background-color: #ffc312;
+  color: black;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+  color: black;
+  background-color: #ffc312;
+  width: 100px;
+  height: 50px;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}

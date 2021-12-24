@@ -1,0 +1,145 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: red;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.container > h2 {
+  margin: 3% 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-style: 42px;
+}
+.container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3% 0;
+  border: 1px solid black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 3%;
+}
+.form-group > label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+    font-size: 22px;
+}
+.form-group > input {
+  width: 600px;
+  margin-bottom: 10px;
+}
+.input_validation > input {
+  width: 600px;
+  margin-bottom: 10px;
+}
+.form-group .alert-danger {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.arrow {
+  margin-right: 10px;
+} */
+
+* {
+  box-sizing: border-box;
+}
+.main_container {
+  padding: 3% 0;
+}
+.main_container > h2 {
+  margin: 2% 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-style: 42px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 5%;
+  width: 100%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  width: 100px;
+}
+.arrow {
+  margin-right: 10px;
+}

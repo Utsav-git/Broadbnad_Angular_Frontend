@@ -1,0 +1,66 @@
+<div class="container">
+  <h2 class="text-center">Employee Details</h2>
+  <form class="d-flex">
+    <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+    />
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <div class="table_container">
+    <table class="table table-dark">
+      <thead class="thead-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let e of emp">
+          <td>{{ e.empid }}</td>
+          <td>{{ e.empname }}</td>
+          <td>{{ e.email }}</td>
+          <td>{{ e.phone }}</td>
+          <td>{{ e.address }}</td>
+
+          <td class="tbl2">
+            <button type="button" class="btn btn-info">
+              <a [routerLink]="['/edit', e.empid]" routerLinkActive="active"
+                >Update</a
+              >
+            </button>
+          </td>
+          <td class="tbl2">
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="deleteEmployee(emp.empid)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="text-center">
+      <button
+        type="button"
+        class="btn btn-info"
+        routerLink="/header"
+        routerLinkActive="active"
+      >
+        <i class="fas fa-arrow-left arrow"></i>Back
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <app-add-employee></app-add-employee> -->
+<!-- <app-update-employee></app-update-employee> -->

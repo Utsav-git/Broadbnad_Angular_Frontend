@@ -1,0 +1,12 @@
+nav {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header_img {
+  height: auto;
+  object-fit: cover;
+  overflow-y: hidden;
+  width: 100%;
+}
